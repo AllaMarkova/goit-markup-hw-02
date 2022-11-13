@@ -7,6 +7,7 @@
   --сolor-logo: #000000;
   --bgc-team: #f5f4fa;
   --bgc-footer: #2f303a;
+  --color-footer: rgba(255, 255, 255, 0.6);
 }
 a {
   text-decoration: none;
@@ -26,6 +27,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .logo-title-one {
   color: var(--color-active);
@@ -71,12 +73,18 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .button-primary {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
   color: var(--color-primary-white);
   background-color: var(--color-active);
   cursor: pointer;
@@ -107,7 +115,6 @@ body {
   text-transform: uppercase;
 }
 .about-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -144,7 +151,6 @@ body {
   letter-spacing: 0.03em;
 }
 .team-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -161,7 +167,6 @@ footer {
 }
 .footer-text {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -170,36 +175,26 @@ footer {
 }
 .footer-link {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--color-secondary);
+  color: var(--color-footer)
 }
 .footer-link:hover,
 .footer-link:focus {
   color: var(--color-active);
 }
 /* -----FILTERS----- */
-.filters-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .filter-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: var(--bgc-team);
+  border-radius: 4px;
   cursor: pointer;
 }
 .filter-button:hover,
@@ -228,11 +223,8 @@ footer {
   letter-spacing: 0.06em;
 }
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-
   letter-spacing: 0.03em;
-
   color: var(--color-secondary);
 }
